@@ -1,7 +1,7 @@
 databases:
   - name: Budget_app
-    databaseName: budget_app_zrcx
-    user: budget_app_zrcx_user
+    databaseName: my_budget_app_db
+    user: budget_app_db_user
 
 services:
   - type: web
