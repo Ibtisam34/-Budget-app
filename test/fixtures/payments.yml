@@ -2,10 +2,8 @@
 
 one:
   name: MyString
-  amount: 9.99
-  category: one
+  amount: 1
 
 two:
   name: MyString
-  amount: 9.99
-  category: two
+  amount: 1
