@@ -14,7 +14,6 @@ default: &default
 
 development:
   <<: *default
-  url: <%= ENV['DATABASE_URL'] %>
   database: budget-test
 
 # Warning: The database defined as "test" will be erased and
@@ -26,5 +25,6 @@ test:
 
 production:
   <<: *default
+  url: <%= ENV['DATABASE_URL'] %>
   database: budget-test
   
