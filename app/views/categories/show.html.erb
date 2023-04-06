@@ -23,8 +23,12 @@
 <% @payments.each do |payment| %>
   <div class="micons">
     <div class="single">
-      <div>
-        <%= @category.icon %>
+        <div class="image">
+          <% if @category.icon.attached?%>
+            <%= image_tag(@category.icon) %>
+          <%else%>
+            <%= image_tag('group.png') %>
+          <%end%>
       </div>
       <div>
         <p><%= payment.name %></p>

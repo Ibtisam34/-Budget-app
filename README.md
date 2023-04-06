@@ -66,7 +66,8 @@ Budget App is a mobile web application where you can manage your budget: you hav
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link](https://falis-app-q4y2.onrender.com)
+- [Live Demo Link](https://falis-app.onrender.com)
+- [Live Presentation]()
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

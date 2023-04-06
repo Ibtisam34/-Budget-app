@@ -12,15 +12,14 @@
           </ul>
         </div>
       <% end %>
-
       <div class="ame">
         <%= form.text_field :name, class: 'catn', placeholder: 'Enter Category name' %>
       </div>
       <hr />
       <div class="ame">
-        <%= form.text_field :icon, class: 'caticon', placeholder: 'Enter Icon Name' %>
-      </div>
-
+      <%= form.label :icon %>
+     <%= form.file_field :icon, class: 'caticon' %>
+     </div>
       <div class="sub">
         <%= form.submit 'Add', class: 'submits' %>
       </div>

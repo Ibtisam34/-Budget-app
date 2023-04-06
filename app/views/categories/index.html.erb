@@ -15,7 +15,13 @@
   <%= link_to category_path(category) do %>
     <div class="section-container">
       <div class="icon">
-        <%= category.icon %>
+       <div class="image">
+        <% if category.icon.attached?%>
+              <%= image_tag(category.icon) %>
+            <%else%>
+              <%= image_tag('group.png') %>
+            <%end%>
+            </div>
       </div>
 
       <div class="name-time">
