@@ -1,22 +1,22 @@
-<nav class="navbars">
-  <ul class="bars">
-  <li class="arrow-left">
-    <%= link_to '<', root_path, class: "arrow-left" %>
-  </li>
-    <li>
-      <p>Register</p>
-    </li>
-    <li>
-      <p class="">Next</p>
-    </li>
-  </ul>
-</nav>
-
 <div class="container">
  <div class="container">
   <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+    <nav class="navbars">
+      <ul class="bars">
+      <li class="arrow-left">
+        <%= link_to '<', root_path, class: "arrow-left" %>
+      </li>
+        <li>
+          <p>Register</p>
+        </li>
+        <li>
+          <div class="actions">
+            <%= f.submit "Next", class: 'signup1' %>
+          </div>
+        </li>
+      </ul>
+    </nav>
     <%= render "devise/shared/error_messages", resource: resource %>
-
     <div class="field">
       <%= f.text_field :name, autofocus: true, autocomplete: "name", placeholder: "Full name", class: "field1" %>
     </div>
@@ -31,10 +31,6 @@
     <hr />
     <div class="field">
       <%= f.password_field :password_confirmation, autocomplete: "new-password",  placeholder: "Confirm your password", class: "password1" %>
-    </div>
-
-    <div class="actions">
-      <%= f.submit "Sign up", class: 'signup1' %>
     </div>
   <% end %>
   </div>

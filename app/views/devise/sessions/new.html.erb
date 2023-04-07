@@ -1,3 +1,6 @@
+<div class="container">
+ <div class="container">
+<%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
 <nav class="first">
   <ul class="second">
     <li class="arrow-left">
@@ -7,12 +10,12 @@
       <h2 class="logs">LOGIN</h2>
     </li>
     <li>
-      <i class="d-none">Log in</i>
+       <div class="actions">
+      <%= f.submit "Log in", class: 'signup1' %>
+    </div>
     </li>
   </ul>
 </nav>
-
-<%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
   <div class="field">
     <%= f.email_field :email, autofocus: true, autocomplete: "email", placeholder: "Email", class: "email1" %>
   </div>
@@ -27,8 +30,6 @@
       <%= f.label :remember_me, class: 'none' %>
     </div>
   <% end %>
-
-  <div class="actions">
-    <%= f.submit "Log in", class: 'signup1' %>
-  </div>
 <% end %>
+</div>
+</div>

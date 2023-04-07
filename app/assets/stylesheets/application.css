@@ -78,6 +78,18 @@ body {
   background-color: #bfd8f3;
 }
 
+.signup1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  font-size: 0.75em;
+  margin-top: 5px;
+  color: white;
+  background-color: #3582db;
+  margin-bottom: 5px;
+}
+
 .bars {
   display: flex;
   justify-content: space-between;
@@ -123,22 +135,13 @@ hr {
   justify-content: center;
 }
 
-.signup1 {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 60%;
-  padding: 10px;
-  border-radius: 30px;
-  border: 1px solid #3582db;
-  background-color: #fff;
-  font-size: 1.3em;
-  margin-top: 10px;
-}
-
 .field {
   display: flex;
   width: 100%;
+}
+
+input.signup1 {
+  font-size: 1.5rem;
 }
 
 .second {
@@ -278,9 +281,10 @@ hr {
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 30px;
+  border-radius: 10px;
   margin: 5px auto;
   padding: 10px;
+  color: #000;
   background-color: #3582db;
 }
 
