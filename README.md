@@ -118,6 +118,7 @@ To run tests, run the following command:
  rspec ./spec/models/user_spec.rb
  rspec ./spec/requests/categories_spec.rb
  rspec ./spec/requests/payments_spec.rb
+ rspec ./spec/views/users_index_spec.rb
 ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>

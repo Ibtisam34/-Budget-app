@@ -10,7 +10,7 @@ Rails.application.routes.draw do
     root 'users#index'
    end
 
-   authenticated do
-     root 'categories#index', as: :authenticated_root
-   end
+  authenticated :user do
+  root 'categories#index', as: :authenticated_root
+end
 end
