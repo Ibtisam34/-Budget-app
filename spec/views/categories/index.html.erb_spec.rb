@@ -10,12 +10,12 @@ RSpec.feature 'Categories', type: :feature do
   end
   describe 'index page' do
     it 'displays a list of categories' do
-      category1 = Category.create!(name: 'Category 1',
-                                   icon: Rack::Test::UploadedFile.new('spec/fixtures/test_image.png', 'image/jpg'), author_id: user.id)
-      # category2 = create(:category, name: "Category 2")
+      category1 = Category.create!(
+        name: 'Category 1',
+        icon: Rack::Test::UploadedFile.new('spec/fixtures/test_image.png', 'image/jpg'), author_id: user.id
+      )
       visit categories_path
       expect(page).to have_content(category1.name)
-      # expect(page).to have_content(category2.name)
     end
   end
 end
