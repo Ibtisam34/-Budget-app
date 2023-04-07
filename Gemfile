@@ -54,10 +54,10 @@ end
 
 group :development do
   # Use console on exceptions pages [https://github.com/rails/web-console]
-  gem 'sqlite3'
-  gem 'web-console'
   gem 'factory_bot_rails', '~> 6.1.0'
   gem 'faker'
+  gem 'sqlite3'
+  gem 'web-console'
   # Add speed badges [https://github.com/MiniProfiler/rack-mini-profiler]
   # gem "rack-mini-profiler"
 

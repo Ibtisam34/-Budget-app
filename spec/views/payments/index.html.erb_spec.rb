@@ -2,9 +2,9 @@ require 'rails_helper'
 RSpec.describe 'payments/index.html.erb', type: :view do
   before(:each) do
     assign(:payments, [
-      Payment.create(amount: 10),
-      Payment.create(amount: 20)
-    ])
+             Payment.create(amount: 10),
+             Payment.create(amount: 20)
+           ])
     render
   end
   it 'displays a link to create a new payment' do

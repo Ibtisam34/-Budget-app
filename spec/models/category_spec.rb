@@ -2,7 +2,8 @@ require 'rails_helper'
 RSpec.describe Category, type: :model do
   let(:user) { User.create(name: 'Riyana', email: 'riyanagwl@test.come', password: 'Queen') }
   subject do
-    Category.new(author: user, name: 'gym', icon: fixture_file_upload(Rails.root.join('spec', 'fixtures', 'test_image.png'), 'image/png'))
+    Category.new(user:, name: 'gym',
+                 icon: fixture_file_upload(Rails.root.join('spec', 'fixtures', 'test_image.png'), 'image/png'))
   end
   before { subject.save }
   it 'is valid with valid attributes' do

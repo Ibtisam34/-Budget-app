@@ -2,7 +2,7 @@
 <% resource = User.new %>
 <div class="container">
   <div class="container">
-  <%= form_for(resource, url: registration_path(@resource_name)) do |f| %>
+  <%= form_for(resource, as: resource_name, url: registration_path(resource_name), html: { class: 'form' }) do |f| %>
       <nav class="navbars">
         <ul class="bars">
           <li class="arrow-left">
