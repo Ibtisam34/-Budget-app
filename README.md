@@ -122,7 +122,7 @@ To run tests, run the following command:
  rspec ./spec/views/categories/index.html.erb_spec.rb
  rspec ./spec/views/categories/new.html.erb_spec.rb
  rspec ./spec/views/payments/index.html.erb_spec.rb
- rspec ./spec/views/payments/new.html.erb_spec.rb
+ rspec ./spec/views/payments/new.html.erb_spec.rb 
  rspec ./spec/views/payments/show.html.erb_spec.rb
  rspec ./spec/views/registrations/new.html.erb_spec.rb
  rspec ./spec/views/sessions/new.html.erb_spec.rb
