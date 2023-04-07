@@ -1,5 +1,5 @@
 require 'rails_helper'
-RSpec.describe 'registrations/new', type: :view do
+RSpec.describe 'devise/registrations/new', type: :view do
   let(:resource_name) { :user }
   let(:resource) { build(:user) } # assuming you have a user factory set up
   before do

@@ -125,7 +125,7 @@ To run tests, run the following command:
  rspec ./spec/views/payments/new.html.erb_spec.rb 
  rspec ./spec/views/payments/show.html.erb_spec.rb
  rspec ./spec/views/registrations/new.html.erb_spec.rb
- rspec ./spec/views/sessions/new.html.erb_spec.rb
+ rspec ./spec/views/sessions/new.html_spec.rb
 ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>

@@ -57,6 +57,7 @@ group :development do
   gem 'sqlite3'
   gem 'web-console'
   gem 'factory_bot_rails', '~> 6.1.0'
+  gem 'faker'
   # Add speed badges [https://github.com/MiniProfiler/rack-mini-profiler]
   # gem "rack-mini-profiler"
 
