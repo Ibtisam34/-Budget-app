@@ -119,6 +119,13 @@ To run tests, run the following command:
  rspec ./spec/requests/categories_spec.rb
  rspec ./spec/requests/payments_spec.rb
  rspec ./spec/views/users_index_spec.rb
+ rspec ./spec/views/categories/index.html.erb_spec.rb
+ rspec ./spec/views/categories/new.html.erb_spec.rb
+ rspec ./spec/views/payments/index.html.erb_spec.rb
+ rspec ./spec/views/payments/new.html.erb_spec.rb
+ rspec ./spec/views/payments/show.html.erb_spec.rb
+ rspec ./spec/views/registrations/new.html.erb_spec.rb
+ rspec ./spec/views/sessions/new.html.erb_spec.rb
 ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
